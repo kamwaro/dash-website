@@ -15,6 +15,20 @@ body {
   padding: 10px 20px 20px;
 }
 
+.nav-container .bottom-sticky-nav {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(124, 122, 122, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 5px;
+
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
 .main-nav {
   display: flex;
   align-items: center;
@@ -22,6 +36,10 @@ body {
 }
 .main-nav li:nth-child(1) {
   margin-right: 10px;
+}
+
+.main-nav li:nth-child(1) img {
+  border-radius: 78% 66% 100% 24% / 37% 73% 10% 38%;
 }
 
 .main-nav li:nth-child(2) {
@@ -69,6 +87,10 @@ body {
 
 .header-banner li:nth-child(1) {
   margin-right: 10px;
+}
+
+.header-banner li:nth-child(1) img {
+  border-radius: 78% 66% 100% 24% / 37% 73% 10% 38%;
 }
 
 .header-banner li:nth-child(2) {
@@ -185,6 +207,37 @@ hr {
 .card-container .card p {
   color: #ccc;
   padding: 20px;
+}
+
+.format-cards {
+  background-image: url(images/adult-apple-device-beautiful-black-girl-1181498.jpg);
+  background-position: center;
+  background-blend-mode: overlay;
+  background-color: darkslategray;
+  object-fit: scale-down;
+  color: #ccc;
+
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+}
+
+.format-cards .card {
+  height: 400px;
+  /* display: flex; */
+}
+
+.format-cards .card > ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 50px;
+}
+
+.format-cards .card > ul li:nth-child(1) h3 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
 }
 
 @media (max-width: 500px) {
