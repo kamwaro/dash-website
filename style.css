@@ -5,11 +5,12 @@
 }
 
 body {
-  background-image: url(images/stars-sky-night-galaxy-14676.jpg);
   color: #fff;
   font-family: 'Open Sans', sans-serif;
 }
-
+.landing-page {
+  background-image: url(images/stars-sky-night-galaxy-14676.jpg);
+}
 .nav-container {
   height: 70px;
   background-color: rgba(0, 0, 0, 0.556);
@@ -248,6 +249,92 @@ hr {
   font-size: 1.8rem;
   text-transform: uppercase;
   color: rgb(255, 255, 255);
+}
+
+.faq {
+  background-color: #fff;
+  color: #000;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 80%;
+  margin: 0 auto;
+}
+
+.faq h1 {
+  padding: 2rem 0 4rem 0;
+}
+
+.accordion-item {
+  border-bottom: 2px solid #ccc;
+  padding: 20px 0;
+  position: relative;
+}
+
+.accordion-item i {
+  position: absolute;
+}
+
+.accordion-item .fa-angle-up {
+  display: none;
+}
+.accordion-item a {
+  color: rgb(85, 85, 85);
+  padding: 0 20px;
+  text-decoration: none;
+}
+.accordion-item .answer {
+  max-height: 0;
+  overflow: hidden;
+
+  transition: max-height ease 650ms;
+}
+
+.accordion-item:target .answer {
+  max-height: 20rem;
+  overflow: hidden;
+}
+
+.accordion-item:target .fa-angle-up {
+  display: block;
+}
+
+.accordion-item:target .fa-angle-right {
+  display: none;
+}
+
+.footer {
+  background-color: rgb(9, 25, 47);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem;
+}
+.footer .logo {
+  display: flex;
+  list-style: none;
+}
+
+.footer-nav {
+  display: flex;
+  list-style: none;
+}
+.footer-nav li {
+  padding-right: 10px;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: #ccc;
+}
+
+.footer .logoImage {
+  border-radius: 78% 66% 100% 24% / 37% 73% 10% 38%;
 }
 
 @media (max-width: 500px) {
